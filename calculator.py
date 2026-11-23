@@ -1,3 +1,8 @@
+# https://github.com/hedychia/lab11-HM-KK.git
+# Partner 1: Haiden Machado
+# Partner 2: Kai Kim
+
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
@@ -22,7 +27,7 @@ def square_root(a):
 
 def hypotenuse(a, b):
     try:
-        return math.hypo(a,b)
+        return math.sqrt((a*a)+ (b*b))
     except Exception:
      raise
 
@@ -36,6 +41,11 @@ def subtract(a, b):
 
 def mul(a, b):
     return a * b
+
+def div(a, b):
+    if a == 0:
+        raise ZeroDivisionError('division by zero')
+    return a / b
 
 def logarithm(a, b):
     if a<= 0 or a ==1 or b <= 0:

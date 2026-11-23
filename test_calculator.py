@@ -1,3 +1,9 @@
+# https://github.com/hedychia/lab11-HM-KK.git
+# Partner 1: Haiden Machado
+# Partner 2: Kai Kim
+
+
+
 import unittest
 from calculator import *
 import calculator
@@ -13,14 +19,14 @@ class TestCalculator(unittest.TestCase):
 
     ####Partner 1
     def test_multiply(self): # 3 assertions
-       self.assertEqual(calculator.multiply(12, 2), 24)
-       self.assertEqual(calculator.multiply(5, 0), 0)
-       self.assertAlmostEqual(calculator.multiply(3.3, 3), 9.9)
+       self.assertEqual(calculator.mul(12, 2), 24)
+       self.assertEqual(calculator.mul(5, 0), 0)
+       self.assertAlmostEqual(calculator.mul(3.3, 3), 9.9)
 
     def test_divide(self): # 3 assertions
-       self.assertAlmostEqual(calculator.divide(7,2), 2.5)
-       self.assertEqual(calculator.divide(10,2), 5)
-       self.assertEqual(calculator.divide(0, 100), 0)
+       self.assertAlmostEqual(calculator.div(7,2), 2.5)
+       self.assertEqual(calculator.div(10,2), 5)
+       self.assertEqual(calculator.div(0, 100), 0)
 
     ######## Partner 2
     # def test_divide_by_zero(self): # 1 assertion
